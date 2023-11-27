@@ -1,0 +1,37 @@
+/*CSS Selectores*/
+
+ /*Selector Universal, selecciona todos los elementos que hay en la página*/
+ /*También se puede usar código hexadecimal*/
+
+/*   *{
+        color: black; 
+      }          */
+
+
+h1{
+    color: violet; /*Selectores por el nombre de los elementos*/
+}
+
+.titulo-h2{     /*Selectores por clases*/
+    color:aquamarine;
+}
+
+#id-element{    /*Selectores por id*/
+    color:blue;
+}
+
+[rancio="sii"]{ /*Selectores por atributos*/
+    color:brown
+}
+
+h1 p{
+    color:#01DA46; /*Se selecciona la etiqueta h1 que tenga la etiqueta p*/
+}
+
+.xd b{
+    color:#F33B00; /*Se selecciona la clase xd que tiene la etiqueta b*/
+}
+
+.xd b span{
+    color:gold; /* Se selecciona la clase xd que tiene dentro la etiqueta b que a su vez tiene dentro la etiqueta span*/
+}
