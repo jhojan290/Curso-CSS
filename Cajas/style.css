@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    font-family: 'Lobster', sans-serif; 
+    font-size: 30px;
+}
+
+/*h2{*/
+    /*background-color: aqua;*/ /*cambiar el color del fondo*/
+    /*display: inline-block;*/
+
+    /*padding-top:20px; ----distancia entre el texto y los bordes de la caja, padding-top:arriba, padding-left:izquierda, padding-rigth:derecha, padding-bottom:abajo
+    padding-bottom:20px;
+
+    padding-right:30px;
+    padding-left:30px;*/
+
+    /* padding:50px; con solo poner padding se pondrá tamaño a todos los bordes */
+
+    /* padding: 10px 50px; se cambiará el tamaño de arriba y abajo, después los de izquierda y derecha */
+
+    /*padding:20px 30px 20px 30px;*/ /*cuando se colocan los 4 tamaños en el mismo padding, el orden es el siguiente:*/
+    /*el primer valor será top, el segundo right, el tercero bottom y el último left;
+    si se quitara la última medida que sería el valor de left, este tomará el valor de right automáticamente*/
+
+    /* width: 300px; */
+
+    /* height: 300px; estos valores se sumarán con los de los padding, aumentando así el tamaño del bloque */
+
+    /* box-sizing: border-box; al colocar esta propiedad se conservará el tamaño de la caja (ancho y alto) sin sumar los valores del padding */
+
+    /* text-align: center; centra el texto dentro del bloque de manera horizontal */
+/*}*/
+
+h2{
+    background-color: red;
+    display:inline-block;
+    padding:100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin:10px;
+}

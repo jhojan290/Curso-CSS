@@ -1,0 +1,19 @@
+/* MEDIDAS RELATIVAS Y MEDIDAS FIJAS*/
+
+*{
+    padding: 0px; /* valores predeterminados del navegador*/
+    margin: 0px;
+}
+
+.contact-form{
+    font-size:25px; /* Dependiendo del tamaño de letra que tenga definido el contenedor, los valores relativos de em también cambiarán,
+    por lo tanto si en el contenedor font-size tiene un tamaño de 25px, los valores de font-size en los elementos dentro del contenedor
+    también cambiarán, ahora 1em que valia 16px predeterminadamente, ahora valdrá 25px gracias a lo establecido en el contenedor.*/
+    background-color: #000;
+    width: 50vw; /*Toma los valores de la pantalla completa de ancho, en este caso será la mitad de esta*/
+    height: 50vh; /*Toma los valores de la pantalla completa de alto, en este caso será la mita de esta*/
+}
+
+/*.contact-form__h2{
+    font-size: 1em;  --------- 1em equivale a 16 px 
+}*/

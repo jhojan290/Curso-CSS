@@ -1,0 +1,93 @@
+/* 
+PSEUDOELEMENTOS
+
+Los pseudoelementos en CSS son elementos virtuales que permiten seleccionar y estilizar partes específicas de un elemento HTML. 
+Se utilizan para aplicar estilos a ciertas partes de un elemento sin tener que agregar HTML adicional. Los pseudoelementos 
+se representan con dos puntos (::)
+ y se colocan después del selector del elemento al que se aplicarán.
+Algunos ejemplos comunes de pseudoelementos incluyen:
+
+::before: Permite insertar contenido generado antes del contenido del elemento seleccionado.
+
+p::before {
+  content: "Antes de: ";
+}
+
+::after: Permite insertar contenido generado después del contenido del elemento seleccionado.
+
+p::after {
+  content: "Después de.";
+}
+
+::first-line: Permite seleccionar y estilizar la primera línea de un elemento.
+
+p::first-line {
+  font-weight: bold;
+}
+
+::first-letter: Permite seleccionar y estilizar la primera letra de un elemento.
+
+p::first-letter {
+  font-size: 150%;
+  color: red;
+}
+
+
+******************************************************************************************************
+
+PSEUDOCLASES
+
+Las pseudoclases en CSS son selectores que permiten seleccionar elementos en función de su estado o posición en el documento. 
+A diferencia de los pseudoelementos, que seleccionan partes específicas de un elemento, 
+las pseudoclases seleccionan elementos en función de ciertos criterios o situaciones.
+Aquí hay algunos ejemplos comunes de pseudoclases:
+
+
+:hover: Selecciona un elemento cuando el usuario pasa el ratón sobre él.
+
+a:hover {
+  color: blue;
+}
+
+:active: Selecciona un elemento cuando está siendo activado, generalmente al hacer clic en él.
+
+button:active {
+  background-color: #ff0000;
+}
+
+:focus: Selecciona un elemento cuando está enfocado, como un campo de entrada de formulario.
+
+input:focus {
+  border: 2px solid #00f;
+}
+
+:nth-child(n): Selecciona el enésimo hijo de un elemento.
+
+ul li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+:not(selector): Selecciona elementos que no coinciden con el selector especificado.
+
+p:not(.special) {
+  color: #333;
+}
+
+*****************************************************************************************************
+
+JERARQUIAS EN CSS - ESPECIFICIDAD
+
+
+jerarquia primer nivel = elementos, pseudo-elementos 
+
+jerarquia segundo nivel = clases, pseudo-clases, atributos
+
+jerarquia tercer nivel = identificadores
+
+jerarquia cuarto nivel = estilos en linea
+
+jerarquia quinto nivel = !important ------------ Siendo este último el de más prioridad 
+
+
+
+

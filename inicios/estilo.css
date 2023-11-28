@@ -9,7 +9,8 @@
 
 
 h1{
-    color: violet; /*Selectores por el nombre de los elementos*/
+    color: violet !important; /*Selectores por el nombre de los elementos*/
+    /* el !important en cuanto a jerarquias es el mas importante y el atributo que lo tenga tomará prioridad frente a los otros */
 }
 
 .titulo-h2{     /*Selectores por clases*/
@@ -24,9 +25,9 @@ h1{
     color:brown
 }
 
-h1 p{
-    color:#01DA46; /*Se selecciona la etiqueta h1 que tenga la etiqueta p*/
-}
+/*h1 p{
+    color:#01DA46; /*Se selecciona la etiqueta h1 que tenga la etiqueta p
+}*/
 
 /*.xd b{
     color:#F33B00;  
@@ -45,3 +46,21 @@ anidado dentro de otro elemento*/
     color:hotpink;  /* Pseudo-clases son selectores que generan eventos en las selecciones que se hagan */
 }
 
+
+h1{
+    color:#93A7F3;
+}
+
+
+/**************************************************************************************************************/
+
+
+/*METODOLOGIA BEM*/
+
+/* .contact-form__input:first-child{ /*una manera de seleccionar el primer input
+    color:blue;
+} */
+
+.contact-form__input--active{
+    color:brown;
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 100; /*Grosor de la letra*/
+    font-family: 'Lobster', sans-serif; /*Desde aqui se llama al tipo de letra referenciado en el html, si no encuentra el primer tipo de letra
+    se irá al segundo, que en este caso es el sans-serif*/
+}
+
+.contact-form{
+    font-size: 25px; 
+}
+
+.contact-form__h2{
+    font-size: 2em; /*Tamaño de la letra*/
+    line-height: 1; /*Espacio total que ocupa una letra, el line height nace del centro de la letra y 1 line height = 1/2 del tamaño
+    de la letra hacia arriba + 1/2 de la letra hacia abajo*/
+    color:red;
+}
+
+/* box-sizing: border-box;  para que el tamaño de la caja al agregar elementos no cambie*/ 
+
+h2{
+    display: inline; /* a los elementos en línea no se les puede hacer height ni width*/
+}
+
+/* p{
+    height: 400px; 
+    width: 200px; ----- a los elementos en bloque si se les puede poner height y width, para modificar el tamaño de la caja
+}*/
+
+
+
+
