@@ -28,11 +28,20 @@ h1 p{
     color:#01DA46; /*Se selecciona la etiqueta h1 que tenga la etiqueta p*/
 }
 
-.xd b{
-    color:#F33B00; /*Se selecciona la clase xd que tiene la etiqueta b*/
-}
+/*.xd b{
+    color:#F33B00;  
+}*/
 
-.xd b span{
-    color:gold; /* Se selecciona la clase xd que tiene dentro la etiqueta b que a su vez tiene dentro la etiqueta span*/
+/*Se selecciona la clase xd que tiene la etiqueta b, este selector es un selector descendiente, ya que me permite seleccionar un elemento que está
+anidado dentro de otro elemento*/
+
+/* .xd b span{
+    color:gold; 
+} */
+
+/* Se selecciona la clase xd que tiene dentro la etiqueta b que a su vez tiene dentro la etiqueta span, este selector también es un selector descendiente*/
+
+.xd b:hover{
+    color:hotpink;  /* Pseudo-clases son selectores que generan eventos en las selecciones que se hagan */
 }
 
