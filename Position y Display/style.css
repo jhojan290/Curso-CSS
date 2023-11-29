@@ -1,0 +1,38 @@
+*{
+    font-weight: 100;
+    font-family: 'Lobster', sans-serif; 
+    font-size: 30px;
+}
+
+/*.caja1, .caja2{  Se pueden poner varios selectores separados por coma, para que se modifiquen a la vez
+    width: 200px;
+    height: 200px;
+}*/
+
+.caja1{
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin:auto; /*margin:auto me centra los elementos de manera horizontal, el navegador calcula los espacios en blanco que se necesitan
+    a la derecha y a la izquierda para poder centrar el elemento*/
+    outline: 5px solid blue; /*Mientras que border ocupa espacio en el contenedor, el outline no lo hace, no desplaza ningún objeto
+    sirve para localizar un objeto y solo resaltar su contorno, al usarlo no se esta sumando al tamaño total de la caja, la caja sigue con los mismos valores
+    solo que ahora tiene un borde a su alrededor que no está ocupando un espacio.
+    --- El outline en CSS es una propiedad que te permite agregar un contorno visual alrededor de un elemento,
+    --- pero a diferencia del border, el outline no afecta al tamaño o diseño del elemento.
+    La diferencia principal con border es que el outline no afecta al tamaño del elemento ni interactúa con el modelo de caja.
+    Es simplemente una línea dibujada alrededor del exterior del elemento.
+    --- no tiene propiedades como border-radius y no se puede personalizar de la misma manera que el border
+
+
+    box-sizing: content-box; /*Me muestra todo lo de la caja, con los valores de contenido, padding y border(si lo hay) sumados al tamaño total del contenedor
+    es por así decirlo, el tamaño predeterminado que tendrá el contenedor.*/
+}
+.caja2{
+    width: 200px;
+    height: 200px;
+    background: yellow; /*background es un shorthand, que son propiedades abreviadas de otras propiedades*/
+    margin:auto;
+}
+
+

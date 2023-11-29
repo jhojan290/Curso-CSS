@@ -28,7 +28,8 @@
 
     /* height: 300px; estos valores se sumarán con los de los padding, aumentando así el tamaño del bloque */
 
-    /* box-sizing: border-box; al colocar esta propiedad se conservará el tamaño de la caja (ancho y alto) sin sumar los valores del padding */
+    /* box-sizing: border-box; al colocar esta propiedad se conservará el tamaño de la caja (ancho y alto) sin sumar al tamaño total los valores del padding y de los bordes si los hay,
+    tanto padding como border afectarán ahora solo al contenido de la caja más no al total */
 
     /* text-align: center; centra el texto dentro del bloque de manera horizontal */
 /*}*/
@@ -39,5 +40,30 @@ h2{
     padding:100px;
     box-sizing: border-box;
     text-align: center;
-    margin:10px;
+    margin:10px; /*como se hace con el padding se asignará la medida de 10px a todos los bordes*/
+    /* margin-right: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin:20px 30px 20px 30px; */
+    border-radius: 10px; /* para redondear los bordes */
+    /* border-radius: 50%;
+    border-radius: 2em; */
+    border: 10px solid blue; /* para poner bordes, primer elemento el tamaño, segundo elemento el estilo y tercero el color */
+    box-shadow: 2px 4px 15px 0 black; /* esta propiedad es para dar sombras a la caja, el primer elemento es el tamaño que se asignará al eje y
+    (parte superior y inferior), el segundo elemento es el tamaño que se asignará al eje x (derecha y izquierda), el tercer elemento será la 
+    cantidad de sombra que se le quire poner al efecto, el cuarto elemento es el tamaño de borde que se quiere y el quinto y último elemento
+    es el color que tendrá el efecto*/
+    text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff, 2px 2px 7px #fff; /* Funciona igual que el box-shadow con la diferencia de que aquí no se puede dar un borde a las letras
+    separando por comas y repitiendo el patrón el efecto se va haciendo más vistoso. Funciona también para el box-shadow*/
+    transform: rotate(-45deg); /*esto es una función, que me permite girar los elementos, como parámetro recibe deg que son los grados que 
+    va a girar el elemento*/
 }
+
+/* BOX MODEL */
+
+/* content: es el cuadro del texto y se modifica con line-height 
+
+en orden de jerarquia del box model, primero iría el content que seria el texto o elemento, despues iría el padding que es la distancia del elemento
+con la caja, en tercer lugar iría el border que son las líneas que rodean el bloque y por último estaría el margin que es el espacio entre bloques
+

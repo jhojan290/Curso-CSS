@@ -1,0 +1,37 @@
+*{
+    font-weight: 100;
+    font-family: 'Lobster', sans-serif; 
+    font-size: 30px;
+}
+
+div{
+    width: 120px;
+    height: 120px;
+    /* display: inline-block; */
+    display: block;
+    background:yellow;
+}
+
+.caja1{
+    background: brown;
+}
+
+.caja2{
+    background: blue;
+}
+
+.caja3{
+    background: red;
+}
+
+.caja4{
+    background: yellow;
+}
+
+/* .caja1{
+    outline: 5px solid red;
+}
+
+.caja4{
+    outline: 5px solid red;
+} */
