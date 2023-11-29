@@ -5,11 +5,16 @@
 }
 
 div{
-    width: 120px;
-    height: 120px;
+    width: 170px;
+    height: 170px;
     /* display: inline-block; */
     display: block;
     background:yellow;
+}
+
+.contenedor{
+    margin-left:300px;
+    margin-top:200px;
 }
 
 .caja1{
@@ -18,16 +23,48 @@ div{
 
 .caja2{
     background: blue;
+    /*position: relative;*/ /*
+    position: relative es una propiedad de CSS que se utiliza para posicionar un elemento en relación con su posición normal 
+    en el flujo del documento. Cuando aplicas position: relative a un elemento, este se moverá desde su posición normal, pero 
+    dejará un espacio vacío en su ubicación original.*/
+    /*position: relative: Cuando aplicas position: relative a un elemento, puedes usar las propiedades top, right, bottom y
+    left para moverlo con respecto a su posición normal. Por ejemplo, si estableces top: 10px, el elemento se moverá 10 píxeles 
+    hacia arriba desde su posición normal. Si estableces left: 20px, se moverá 20 píxeles hacia la izquierda desde su posición normal.
+    el position relative tomará como referencia la posición en la que se encuentre para moverse, es decir que si antes hay otro elemento,
+    top no tomará como punto de inicio el principio del DOM si no la parte de abajo del anterior elemento y asi sucesivamente.*/
+    /*Top y Left son las principales propiedades del position relative, se pueden modificar todos los lados, pero a top y left les dará mas relevancia,
+    en caso tal de tener top,bottom,left y right, top y left serán los únicos que modifiquen la posición del elemento, sin estar estos dos. Bottom y right
+    podrám funcionar*/ 
+    /* top:60px;
+    left:20px;   */
+
+    /*z-index:1;*/ /*Una recomendación es la de dejar espacios en los valores de cada z-index, minimo 10 espacios, máximo 50 espacios, para así
+    poder insertar nuevos elementos en el futuro sin tener la necesidad de modificar muchos de los z-index que existan*/
+
+     /*opacity es la transpariencia del objeto, con .5 estoy queriendo decir que el valor será decimal, .5 hace referencia a 0.5
+    el opacity solo funcionará en el rango de 0 a 1, siendo 0 completamente transparente y 1 completamente opaco, todos estos valores serán decimales*/
+    /* margin-left: 300px;  */
+    position:absolute; /*Con el posición absolute el elemento ya no va a ocupar un espacio como en el relative, es decir, que ya
+    habrá un espacio reservado para el elemento, automaticamente desaparecerá, ahora al moverse ese espacio en blanco que se quedaba
+    será ocupado por el elemento que este siguiente */
+    /*el punto de referencia de este elemento será el contenedor o el viewport, cuando se le asigna un top,left,bottom o right en 0, su punto
+    de referencia será el viewport, pero si no tiene ninguna de las anteriores, el punto de referencia será su posición original dentro del contenedor,
+    el navegador calcula esto. Con el position absolute el ancho y el alto se ajustan al contenido de la caja.
+    para que un elemento tome como referencia al contenedor, el contenedor debe tener definida la propiedad position como relative*/
 }
 
 .caja3{
     background: red;
+    /* position: relative; */
+    position:absolute;
+    margin-left:200px;
+   
 }
 
 .caja4{
-    background: yellow;
-}
 
+
+}
 /* .caja1{
     outline: 5px solid red;
 }
@@ -35,3 +72,11 @@ div{
 .caja4{
     outline: 5px solid red;
 } */
+
+/*z-index: esta propiedad solo funciona si el elemento esta posicionado, al estar posicionado me muestra un elemento sobre otro con base
+al valor que se tenga, si el valor es menor al de otro z-index se mostrará por detras y si el valor es mayor al de otro z-index se mostrará adelante.
+si hay dos elementos posicionados, el que se mostrará al frente será el último que se dibujo, ya que por lógica este tendría que sobreponerse
+al elemento anterior. Predeterminadamente al asignarle posiciones a las cajas estás tendrán un valor base de z-index en 0*/
+
+
+/*La pantalla completa, es el viewport, osea todo lo que está en blanco*/

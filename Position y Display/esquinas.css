@@ -1,0 +1,54 @@
+*{
+    font-weight: 100;
+    font-family: 'Lobster', sans-serif; 
+    font-size: 30px;
+}
+
+div{
+    display:block;
+    background: green;
+    position: absolute;
+}
+
+div div{
+    height: 100px;
+    width: 75px;
+    background-color: aquamarine;
+
+}
+
+.contenedor{
+    position:relative;
+    margin:50px auto; /*el auto como segundo valor centra los elementos horizontalmente en el eje x*/
+    /*margin:auto no funciona con el position absolute, debido a que toma como referencia el viewport o el contenedor*/
+    border:5px solid red;
+    height: 450px;
+    width: 450px;
+}
+
+.caja1{
+    top:0;
+}
+
+.caja2{
+    right: 0;
+}
+
+.caja3{
+    bottom:0;
+}
+
+.caja4{
+    right: 0;
+    bottom: 0;
+}
+
+.caja5{
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin: auto; /*para ubicar algo en el medio*/
+}
+
+
