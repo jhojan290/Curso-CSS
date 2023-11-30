@@ -1,0 +1,17 @@
+*{
+    font-weight: 100;
+    font-family: 'Lobster', sans-serif; 
+    font-size: 40px;
+}
+
+body{
+    padding-top: 100px; /*Para que el contenedor con position:fixed no me tape el contenido en la parte superior*/
+}
+
+.caja-fixed{
+    background: red;
+    position:fixed; /* Esta propiedad es igual que el position absolute, deja de ocupar un espacio en el DOM por lo tanto otros elementos,
+    podrán ocupar su posición, lo diferente es que con el fixed el contenedor se quedará fijo al hacer scroll. El contenido seguirá en pantalla
+    y no desaparece, ya que el contenido esta fijo*/
+    margin:-100px; /*Margin para enviar el elemento modificado por padding hacia arriba*/
+}

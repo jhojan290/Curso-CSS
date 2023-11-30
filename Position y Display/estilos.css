@@ -44,9 +44,10 @@ div{
      /*opacity es la transpariencia del objeto, con .5 estoy queriendo decir que el valor será decimal, .5 hace referencia a 0.5
     el opacity solo funcionará en el rango de 0 a 1, siendo 0 completamente transparente y 1 completamente opaco, todos estos valores serán decimales*/
     /* margin-left: 300px;  */
-    position:absolute; /*Con el posición absolute el elemento ya no va a ocupar un espacio como en el relative, es decir, que ya
-    habrá un espacio reservado para el elemento, automaticamente desaparecerá, ahora al moverse ese espacio en blanco que se quedaba
-    será ocupado por el elemento que este siguiente */
+    position:absolute; /*es una propiedad que posiciona un elemento de manera absoluta con respecto a su primer ancestro posicionado (es decir, un elemento que no tenga position: static) o al elemento de nivel superior, que es el documento HTML.
+    Cuando aplicas position: absolute a un elemento, puedes usar las propiedades top, right, bottom, y left para especificar cómo debería colocarse en relación con su contenedor posicionado. Esto te da un control preciso sobre la ubicación del elemento en la página.
+    Es importante tener en cuenta que un elemento con position: absolute se retira del flujo normal del documento, lo que significa que no afecta el diseño de los elementos circundantes. Otros elementos pueden ocupar su lugar original en el flujo. */
+
     /*el punto de referencia de este elemento será el contenedor o el viewport, cuando se le asigna un top,left,bottom o right en 0, su punto
     de referencia será el viewport, pero si no tiene ninguna de las anteriores, el punto de referencia será su posición original dentro del contenedor,
     el navegador calcula esto. Con el position absolute el ancho y el alto se ajustan al contenido de la caja.
@@ -61,10 +62,6 @@ div{
    
 }
 
-.caja4{
-
-
-}
 /* .caja1{
     outline: 5px solid red;
 }
