@@ -1,0 +1,70 @@
+/*inline-block: a diferencia de block y inline a estos se les puede dar un ancho y un alto, es decir, que se pueden modificar las dimensiones 
+de la caja, el inline-block también me permite poner un elemento al lado de otro. Su comportamiento es de bloque pero se puede comportar de acuerdo
+al contenido*/
+
+*{
+    font-weight: 100;
+    font-family: 'Lobster', sans-serif; 
+    font-size: 40px;
+}
+
+c{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 10px solid red;
+    background: yellow;
+    /* display: inline; Los elementos se ponen en línea pero no se puede modificar ni el ancho ni alto del contenedor, solo el contenido */
+
+    /* display:inline-block;*/ /*Los elementos se ponen uno al lado de otro, es decir, que se ponen en línea pero actuan como bloques, se pueden 
+    cambiar sus tamaños tanto de ancho como de altura*/
+
+    display: block;  /*Son los elementos que llegan hasta el final de la línea y como lo dice el nombre forman un bloque, pero se pone uno
+    debajo del otro, no actúan como elementos en línea, entonces no se puede poner uno al lado del otro */
+
+}
+
+div{
+    margin: auto;
+    margin-top:50px;
+    width:320px;
+    height:350px;
+    border: 4px solid red;
+    background: grey;
+    overflow:hidden;
+    
+}
+
+img{
+    /* max-width: 100%; Para adaptar el ancho de la imagen al tamaño máximo del contenedor */
+    /* max-height: 100%; Para adaptar el alto de la imagen al tamaño máximo del contenedor */
+    /* width:500px; Si la imagen supera el ancho del contenedor, la imagen seguirá dentro y no cambiará su tamaño */
+    /* height:500px; Si la imagen supera el alto del contenedor, la imagen seguirá dentro y no cambiará su tamaño */
+    width:100%; /*para que el ancho de la imagen se adapte al contenedor*/
+    /* height: 100%; para que el alto de la imagen se adapte al contenedor */
+    position: relative;
+    top:50px;
+    left:20px;
+    outline:6px solid blue;
+
+}
+
+/* La propiedad overflow: inherit en CSS se utiliza para heredar el valor de la propiedad overflow de un elemento padre.
+ La propiedad overflow controla cómo se maneja el contenido que desborda los límites del contenedor.*/
+
+ /*overflow en CSS:
+
+La propiedad overflow se utiliza para especificar cómo se debe comportar el contenido que desborda los límites de un contenedor. Puede tener los siguientes valores:
+visible: El contenido desbordante es visible fuera del contenedor.
+hidden: El contenido desbordante está oculto.
+scroll: Se agrega una barra de desplazamiento al contenedor para permitir al usuario desplazarse y ver el contenido desbordante (obligatoriamente).
+auto: Similar a scroll, pero se agrega una barra de desplazamiento solo si es necesario.
+overflow afecta tanto al eje y como al eje x, asi que se agregará un scroll a ambos ejes dependiendo de la propiedad de overflow.
+
+overflow: inherit:
+Cuando aplicas overflow: inherit a un elemento, estás indicando que el valor de la propiedad overflow debe heredarse del elemento padre directo. 
+Esto significa que el comportamiento de desbordamiento del elemento hijo será el mismo que el de su elemento contenedor directo.*/
+
+
+/*Overflow es un shorthand, quiere decir que existen dos propiedades overflow-y y overflow-x pero ambas se abrevian con la propiedad
+overflow.
