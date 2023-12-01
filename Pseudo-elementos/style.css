@@ -1,0 +1,31 @@
+*{
+    font-weight: 100;
+    font-family: 'Lobster', sans-serif; 
+    font-size: 30px;
+}
+
+/* .texto{
+    padding:20px;
+} */
+
+/*Pseudoelementos*/
+
+/* .texto::first-line{
+    color:blue; Cambia la primera linea de manera dinamica
+    font-size:4em;
+} */
+
+/*estos pseudoelementos solo funcionan con display:inline-block y block, no funcionan con elementos inline*/
+
+/*.texto::first-letter{
+    color:blue;
+    font-size: 4em; Cambia la primera letra del texto
+}*/
+
+/*Estos propiedades ocupan un espacio en el DOM*/
+
+/*Los pseudoelementos que requieren de la etiqueta content no forman parte del DOM*/
+
+input{
+    margin:100px;
+}

@@ -24,6 +24,10 @@ c{
 
 }
 
+body{
+    background: black;
+}
+
 div{
     margin: auto;
     margin-top:50px;
@@ -43,8 +47,19 @@ img{
     width:100%; /*para que el ancho de la imagen se adapte al contenedor*/
     /* height: 100%; para que el alto de la imagen se adapte al contenedor */
     position: relative;
-    top:50px;
-    left:20px;
+    top:260px;
+    left:240px;
+    outline:6px solid blue;
+    transition: all 1.2s /*para hacer animaciones en css*/
+}
+
+
+div:hover > img{
+ 
+    width:100%;
+    position: relative;
+    top:0px;
+    left:0px;
     outline:6px solid blue;
 
 }

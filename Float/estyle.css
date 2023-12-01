@@ -1,0 +1,129 @@
+
+*{
+    font-weight: 100;
+    font-family: 'Lobster', sans-serif; 
+    /* font-size: 20px; Si coloco un font-size a la letra de todo el documento las etiquetas h no van a funcionar */
+    font-size:20px;
+}
+
+
+.cont{
+    margin: auto;
+    margin-top:50px;
+    border: 4px solid red;
+    background: grey;
+    width: 50%;
+    padding: 40px;
+    
+}
+
+.cont imgj{
+    /* max-width: 100%; Para adaptar el ancho de la imagen al tamaño máximo del contenedor */
+    /* max-height: 100%; Para adaptar el alto de la imagen al tamaño máximo del contenedor */
+    /* width:500px; Si la imagen supera el ancho del contenedor, la imagen seguirá dentro y no cambiará su tamaño */
+    /* height:500px; Si la imagen supera el alto del contenedor, la imagen seguirá dentro y no cambiará su tamaño */
+    width:100%; /*para que el ancho de la imagen se adapte al contenedor*/
+    /* height: 100%; para que el alto de la imagen se adapte al contenedor */
+    position: relative;
+    top:260px;
+    left:240px;
+    outline:6px solid blue;
+    float:right;
+}
+
+/* 
+.cont p{
+    width:50%;
+} */
+
+.cont img{
+    float: right;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+}
+
+
+/* .contenedor div {
+    width: 50%;
+    float: right;
+}
+
+.primario {
+    background:red;
+}
+
+.secundario{
+    background: yellow;
+} */
+
+
+
+/* .float-left {
+    float: left;
+    margin-right: 20px; 
+    background: red;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px; 
+    background: blue;
+} */
+
+
+/*La propiedad float en CSS se utilizaba originalmente para especificar cómo debería colocarse un elemento en relación con los elementos circundantes. 
+Aunque aún se encuentra en uso, su funcionalidad ha cambiado en gran medida con la introducción de flexbox y grid en CSS, y generalmente se prefiere el 
+uso de estas propiedades para el diseño de la página.
+
+La propiedad float tiene dos valores principales:
+
+left: El elemento flota a la izquierda de su contenedor, permitiendo que otros elementos fluyan alrededor de él.
+
+right: El elemento flota a la derecha de su contenedor, permitiendo que otros elementos fluyan alrededor de él.
+
+Cuando un elemento se establece con float: left o float: right, su posición se retira del flujo normal del documento, 
+y otros elementos fluyen alrededor de él. Este comportamiento es útil para la creación de diseños de columnas simples.
+
+Es importante tener en cuenta que el uso excesivo de float para diseñar páginas web puede llevar a problemas, como la 
+pérdida de la altura del contenedor y el desorden del diseño. Además, el uso de float no proporciona una manera fácil 
+de centrar elementos verticalmente.
+
+
+Cuando un elemento tiene la propiedad float aplicada, se retira del flujo normal del documento, lo que significa que los elementos que le siguen en el 
+código HTML pueden no reconocer su presencia para el cálculo de altura. Esto puede llevar a que el contenedor padre del elemento flotante no ajuste su 
+altura correctamente, y como resultado, parece "perder" la altura del elemento flotante.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
