@@ -13,7 +13,7 @@
 }
 
 .nav{
-    background-color: darkslateblue;
+    background-color: #48e;
 }
 
 .nav__li:hover > a{
@@ -81,6 +81,83 @@
     box-sizing: border-box;
     text-align: right;
     margin-right: 5px;
+}
+
+.nav__responsive-button-container{
+    position: absolute;
+    width:100%;
+    font-size:25px;
+    background: rgb(76, 119, 194);
+    margin-top:-64px;
+    z-index:100;
+
+}
+
+.nav__responsive-button{
+    padding: 6px 20px;
+    text-align: right;
+    width:90%;
+}
+
+@media only screen and (max-width:500px){
+    .nav__ul{
+        display: none;
+    }
+
+    .nav{
+        height:50px;
+        width:100%;
+        background-color: #69c;
+    }
+
+    .nav__responsive-ul{
+        display:block;
+        position: absolute;
+        width: 100%;
+        background: #9bf;
+        margin-top: 37px;
+        padding-top:27px;
+        height: 37px;
+    }
+
+    .nav__li-container{
+        position:relative;
+        top: -1000px;
+        height: calc(100vh - 37px); 
+        /* La expresión height: calc(100vh - 37px); en CSS se utiliza para establecer la altura de un elemento en una página web.
+        100vh: Representa el 100% de la altura de la ventana del navegador.
+        - 37px: Resta 37 píxeles de esa altura.
+        Entonces, en términos sencillos, la altura del elemento será igual a toda la altura de la ventana del navegador menos 37 píxeles.
+        Esto puede ser útil para ajustar el diseño de la página de manera que tenga un tamaño específico, pero no ocupe toda la pantalla. */
+        background: #9bf;
+        transition: all 1s;
+        z-index:1;
+        width: 75%;
+        padding-top: 27px;
+    }
+
+    .nav__responsive-li{
+        width: 100%;
+        padding: 9px 20px;
+    }
+
+    .nav__responsive-li i{
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color:#016;
+    }
+
+    .nav__responsive-li a{
+        color: #016;
+        text-decoration: none;
+    }
+
+    .nav__responsive-ul:hover > .nav__li-container{
+        top:-27px;
+    }
+    
 }
 
 
