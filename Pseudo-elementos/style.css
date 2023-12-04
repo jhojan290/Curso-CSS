@@ -26,6 +26,52 @@
 
 /*Los pseudoelementos que requieren de la etiqueta content no forman parte del DOM*/
 
-input{
-    margin:100px;
+form{
+    margin: 100px auto;
+    display:block;
+    background-color: black;
+    padding: 100px;
+    width: 50%;
 }
+
+/* input{
+    padding: 6px;
+    width:100%;
+} */
+
+/* input::placeholder{ Modifica el texto pista que esta dentro de los inputs 
+    color:red;
+    font-size:10px;
+    background-color: yellow;
+} */
+
+
+/* input::selection{ Es el pseudoelemento que modifica la selección de un texto, predeterminadatamente es azul, pero con esto se puede modificar ese color,
+    entre otras posibilidades, se puede entender como que crea una etiqueta invisible en la que se puede modificar el color del fondo y el color
+    de la letra.
+    Esta selección se comporta como un elemento en línea, ya que no se puede modificar su tamaño
+    color:red;
+    font-size:10px;
+    background-color: yellow;
+} */
+
+b{
+    padding: 6px;
+    width: 100%;
+    color:white;
+}
+
+b::before{
+    content: "nada"; 
+    color:red;
+}
+
+b::after{
+    content: "hola mundito";
+    color:blue;
+}
+
+/*Estos pseudoelementos se comportan como un inline pero pueden ser utilizados en un elemento en bloque, before y after son hijos de la clase o elemento a los cuales se haga mención
+en el selector, su función es poner algo (texto,figura,separador) bien sea antes o después del contenido que tenga el elemento. Estos pseudoelementos, no ocupan espacio
+en el DOM quiere decir que no podrán ser seleccionados de manera normal, ni podrán ser accedidos a través de Javascript, solo son usados como referencia para adornar o
+generar ejemplos en el HTML.*/

@@ -1,0 +1,140 @@
+/*En CSS, las pseudo-clases son selectores que te permiten seleccionar y estilizar elementos en función de su estado 
+o posición en la estructura del documento. Estas pseudo-clases permiten aplicar estilos de manera dinámica sin necesidad 
+de utilizar JavaScript.*/
+
+
+*{
+    font-weight: 100;
+    font-family: sans-serif; 
+    font-size: 20px;
+    margin:0;
+    padding:0;
+}
+
+/* body{
+    background:black;
+} */
+
+/******************************************************************************************/
+
+/*Hover*/
+/* 
+.caja1{
+    height:200px;
+    width:200px;
+    background:slateblue;
+    transition: background 1s, height 1s, width 1s;  
+    El transition sirve para retrasar el efecto de hover, es decir, que ahora el efecto de cambiar de color se tardará un 1 segundo
+    transition:all 1s, border 0.5s; Si se quiere modificar una propiedad en especifico solo es cuestión de separar por comas y poner la propiedad y el valor que se requiera
+    con all se cambia todo sin la necesidad de colocar todo lo anterior, todas las propiedades que se pongan, van
+    a cambiar
+    border: 3px solid red;
+} */
+
+/* .caja1:hover{
+    background: red; 
+    height:300px;
+    width:300px;
+    border-color: blue;
+} */
+
+/* el hover se utiliza para seleccionar y estilizar un elemento cuando el cursor del mouse está sobre él,
+este cambiará de forma, color o animación*/
+
+/*****************************************************************************************/
+
+/*Link*/
+
+
+/* a{
+    margin:30px;
+    display:block;
+}  */
+
+/* a:link{
+    color:red;
+} */
+
+/*La pseudoclase link, sirve para diferenciar cuando un enlace a una página ha sido utilizado o no, si el link 
+proporcionado ya fue utilizado este aparecerá en su color predeterminado, si el link no ha sido utilizado aún, aparecerá
+de otro color, indicando que aún no se ha clickeado el link*/
+
+/****************************************************************************************/
+
+/* a:visited{
+    color:yellow;
+    La pseudoclase visited, muestra el color que tendrá el link después de ser utilizado
+} */
+
+/*Una curiosidad es que estas dos pseudoclases parecen conectadas, es decir, que cuando se quiere por ejemplo utilizar un display block
+(ya que a, es un elemento en línea) y despues se quiere poner un padding o modificar el tamaño de la letra. Estas dos pseudoclases, se modifican 
+a la vez, no se pueden modificar individualmente.*/
+
+/****************************************************************************************/
+
+
+/*Active*/
+
+
+/* .caja{
+    width: 250px;
+    height: 250px;
+    background: red;
+    margin: 25px;
+    transition: all 1s;
+}
+
+.caja:active {
+    background: blue;
+    width: 600px;
+} */
+
+/*Esta pseudoclase funciona mientras se deje presionado el click sobre un elemento, pues este cambiará de forma,
+color o tamaño según se necesite*/
+
+
+/******************************************************************************************/
+
+/*Focus*/
+
+
+/* .caja{
+    margin:25px;
+    background:lightgrey;
+    transition:background 0.4s, padding 0.4s;
+}
+
+.caja:focus{
+    background:white;
+    padding:20px;
+} */
+
+/*Esta pseudoclase sirve solo para inputs, su funcionalidad es la de que al seleccionar un elemento este cambie de color o forma,
+quiere decir que solo hace esto cuando el elemento este enfocado, al dar click cambiará lo que este dentro del input, bien sea el
+fondo, los tamaños, etc. Al deseleccionar el elemento, este volverá a su forma original*/
+
+/********************************************************************************************/
+
+/*Lang*/
+
+
+.caja{
+    margin:25px;
+}
+
+.caja b:lang(en){
+    background: red;
+    padding:20px;
+}
+
+.caja b:lang(es){ /*el parámetro (es) se refiere al código de idioma del español*/
+    background: blue;
+    padding:20px;
+    
+}
+
+/*La pseudoclase :lang en CSS se utiliza para seleccionar elementos basados en el valor del atributo lang (idioma) en HTML. Permite
+ aplicar estilos específicos a elementos que tienen un idioma específico definido en su estructura.*/
+
+
+

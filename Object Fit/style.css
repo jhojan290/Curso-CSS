@@ -1,0 +1,135 @@
+*{
+    font-weight: 100;
+    font-family: sans-serif; 
+    font-size: 20px;
+    margin:0;
+    padding:0;
+}
+
+/************************************************************/
+/* .caja{
+    margin:25px;
+    width:300px;
+    height: 400px;
+}
+
+.caja img{
+    height:100%;
+    width:100%;
+    border: 4px solid red;
+    object-fit: contain;
+} */
+
+/* Cuando se establece object-fit: contain, se indica que el contenido debe ajustarse para que quepa completamente 
+dentro del contenedor, manteniendo su relación de aspecto original.*/
+
+/************************************************************/
+
+/* .caja{
+    margin:25px;
+    width:300px;
+    height: 400px;
+}
+
+.caja img{
+    height:100%;
+    width:100%;
+    border: 4px solid red;
+    object-fit: cover;
+} */
+
+/*Con el object-fit:cover la imagen se adapta al tamaño del contenedor, esta propiedad lo que hace es reenfocar
+la imagen dependiendo del tamaño que tenga el contenedor padre, esto con el fin de que la imagen pueda ocupar
+todo el espacio*/
+
+/************************************************************/
+
+/* 
+.caja{
+    margin:25px;
+    width:300px;
+    height: 300px;
+}
+
+.caja img{
+    height:100%;
+    width:100%;
+    border: 4px solid red;
+    object-fit: none;
+} */
+
+/* Cuando usas object-fit: none, le estás diciendo al navegador que el contenido mantenga su tamaño original 
+y no se ajuste para caber perfectamente en el contenedor. */
+
+/*************************************************************/
+
+/* .caja{
+    margin:25px;
+    width:300px;
+    height: 300px;
+}
+
+.caja img{
+    height:100%;
+    width:100%;
+    border: 4px solid red;
+    object-fit: none;
+} */
+
+/*************************************************************/
+
+/* .caja{
+    margin:25px;
+    width:200px;
+    height: 200px;
+}
+
+.caja img{
+    height:100%;
+    width:100%;
+    border: 4px solid red;
+    object-fit: scale-down;
+} */
+
+/* La diferencia clave con scale-down es que, a diferencia de contain,
+ si el contenido es más grande que el contenedor, se ajustará para caber 
+ dentro, pero solo se reducirá en tamaño si es necesario.
+ 
+En este caso, si la imagen es más grande que las dimensiones del contenedor
+(200x200 píxeles), la imagen se reducirá para que quepa completamente dentro
+del contenedor, pero solo si es necesario. Si la imagen ya es más pequeña que
+el contenedor, no se ampliará; se mantendrá en su tamaño original.
+
+La opción scale-down es útil cuando deseas asegurarte de que el contenido no se
+amplíe innecesariamente y solo se reduzca si es necesario para ajustarse al contenedor. 
+Es una especie de combinación de contain y none: el contenido no se ampliará más allá de 
+su tamaño original, pero se reducirá si es necesario para ajustarse al contenedor.
+
+*/
+
+/************************************************************/
+
+.caja{
+    margin:25px;
+    width:500px;
+    height: 400px;
+}
+
+.caja img{
+    height:100%;
+    width:100%;
+    border: 4px solid red;
+    object-fit: cover;
+    /* object-position: top;
+    object-position: left;
+    object-position: bottom;
+    object-position: right; */
+
+    /*Lo que hace el object-position, es mostrar la imagen dentro del contenedor hacie la dirección
+    que se le indique*/
+    /* object-position: 20px; */
+    /* También se pueden utilizar las unidades de medida px,% o em para dar dirección a la imagen,
+    al parecer solo se puede mover de derecha a izquierda siendo 20px a la derecha y -20px hacia la izquierda */
+}
+
+

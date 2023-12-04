@@ -1,0 +1,87 @@
+*{
+    font-weight: 100;
+    font-family: sans-serif; 
+    /* font-size: 20px; */
+    margin:0;
+    padding:0;
+}
+
+.nav__responsive-ul{
+    display:none; 
+    /* Cuando un elemento tiene esta propiedad aplicada, se vuelve invisible y no ocupará espacio en el diseño de la página.
+     No se mostrará en la pantalla y no será accesible para el usuario.*/
+}
+
+.nav{
+    background-color: darkslateblue;
+}
+
+.nav__li:hover > a{
+    color:#bbb;
+    /* .nav__li:hover: Esto selecciona un elemento de lista (<li>) que tiene la clase nav__li cuando el mouse está sobre él 
+    (cuando está en estado de "hover"). En otras palabras, cuando pasas el mouse sobre el elemento de lista, se aplica esta regla.
+
+    >: Este es el selector de hijo directo. En este contexto, selecciona solo los elementos hijos directos del elemento li.
+
+    a: Esto selecciona los elementos de anclaje (<a>) que son hijos directos del elemento de lista li cuando el mouse está sobre el elemento de lista.
+
+    Entonces, en términos simples, la regla completa significa: "Cuando el mouse está sobre un elemento de lista con la clase nav__li, aplica estilos solo 
+    al enlace directo (<a>) que es un hijo directo de ese elemento de lista". */
+}
+
+.nav__li:hover{
+    color:#bbb;
+}
+
+.nav__li{
+    display:inline-block;
+    padding: 12px;
+    color:#fff;
+}
+
+.nav__li a{
+    color:#fff;
+    text-decoration: none; 
+    /*el text-decoration, se utiliza para establecer o eliminar la decoración del texto de un elemento. Puedes usar esta propiedad para controlar aspectos visuales 
+    como subrayar texto, aplicar una línea sobre o a través del texto, o incluso quitar completamente la decoración del texto.
+    
+    none: No se aplica ninguna decoración al texto. Es común usar esto para eliminar subrayados en enlaces, por ejemplo.
+    
+    text-decoration: none;
+
+    ------------------------------------------------------------------------------------------------------------------------
+
+    underline: Agrega una línea de subrayado al texto.
+
+    text-decoration: underline;
+
+    ------------------------------------------------------------------------------------------------------------------------
+
+    overline: Agrega una línea sobre el texto.
+
+    text-decoration: overline;
+
+    ------------------------------------------------------------------------------------------------------------------------
+
+    line-through: Agrega una línea a través del texto, como si estuviera tachado.
+
+    text-decoration: line-through;
+
+    ------------------------------------------------------------------------------------------------------------------------
+
+    blink: No es muy común, pero algunos navegadores admiten la propiedad 
+    blink, que hace que el texto parpadee.
+
+    text-decoration: blink;
+
+*/
+}
+
+.nav__li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+
+

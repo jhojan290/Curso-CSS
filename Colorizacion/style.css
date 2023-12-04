@@ -1,0 +1,45 @@
+*{
+    font-weight: 100;
+    font-family: sans-serif; 
+    font-size: 20px;
+    margin:0;
+    padding:0;
+}
+
+.caja{
+    margin:40px;
+    width:200px;
+    height: 300px;
+    border: 5px solid red;
+    /* background-color: #f00; */
+    background: rgb(0,0,0); /*todo en 0 será negro, todo en 255 será blanco*/
+    /*Las medidas con rgb van del 0 al 255
+    Las siglas significan red,green,blue
+    el primer valor serán todas las gamas de rojo, siendo el 255 el rojo más vivo
+    el segundo valor serán las gamas de verdes
+    y el tercer valor serán las gamas de azules*/
+    background: rgba(0,0,0,.9); /*El rgba agrega un cuarto valor, que es la opacidad 
+    que va del 0 al 1, donde un valor de 0 indica que el elemento es completamente transparente 
+    (es decir, no es visible en absoluto), y un valor de 1 indica que el elemento es completamente 
+    opaco (totalmente visible).*/
+    
+}
+/* Es recomendable no utilizar los colores por su nombre, ya que el navegador lo puede
+interpretar como quiera, así que si un elemento es rojo este puede adquirir cualquier tono,
+en cambio si se define con código hexadecimal, ese color no lo podrá cambiar, ya que es algo fijo */
+/* Lista de colores CSS en todas las formas */
+/* https://www.mclibre.org/consultar/htmlcss/css/css-color.html */
+
+
+/*Los colores con hexadecimal funcionan de la siguiente manera
+
+con 3 valores primera(#f = red), segunda(f = green), tercera(f = blue)
+con 4 valores primera(#f = red), segunda(f = green), tercera(f = blue), cuarta(f = alpha(opacidad))
+con 6 valores primera(#ff = red), segunda(ff = green), tercera(ff = blue)
+con 8 valores primera(#ff = red), segunda(ff = green), tercera(ff = blue), cuarta(ff = alpha(opacidad))
+
+*/
+
+
+
+
